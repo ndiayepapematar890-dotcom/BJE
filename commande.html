@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Commande - BJE</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ==========================================
+         BARRE DE NAVIGATION
+         ========================================== -->
+
+    <header>
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Accueil
+                    </a>
+                </li>
+
+                <li>
+                    <a href="catalogue.html">
+                        Catalogue
+                    </a>
+                </li>
+
+                <li>
+                    <a href="apropos.html">
+                        A propos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="panier.html">
+                        Panier
+                        (<span class="nombre-panier">0</span>)
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+                <li>
+                    <a href="connexion.html">
+                        Connexion
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ==========================================
+         CONTENU PRINCIPAL
+         ========================================== -->
+
+    <main>
+
+
+        <section class="commande">
+
+
+            <h1>
+                Passer la commande
+            </h1>
+
+
+            <p class="intro-commande">
+
+                Remplissez vos informations pour
+                finaliser votre commande.
+
+            </p>
+
+
+
+            <!-- ======================================
+                 FORMULAIRE CLIENT
+                 ====================================== -->
+
+            <div class="formulaire-commande">
+
+
+                <h2>
+                    Vos informations
+                </h2>
+
+
+                <form id="formulaire-commande">
+
+
+                    <!-- NOM -->
+
+                    <label for="nom-client">
+                        Nom complet
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nom-client"
+                        name="nom"
+                        placeholder="Votre nom complet"
+                        required
+                    >
+
+
+                    <!-- TÉLÉPHONE -->
+
+                    <label for="telephone-client">
+                        Numéro de téléphone
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="telephone-client"
+                        name="telephone"
+                        placeholder="Exemple : 77 XXX XX XX"
+                        required
+                    >
+
+
+                    <!-- ADRESSE -->
+
+                    <label for="adresse-client">
+                        Adresse de livraison
+                    </label>
+
+                    <textarea
+                        id="adresse-client"
+                        name="adresse"
+                        rows="4"
+                        placeholder="Quartier, rue, lieu de livraison..."
+                        required
+                    ></textarea>
+
+
+                    <!-- COMMENTAIRE -->
+
+                    <label for="commentaire-client">
+                        Commentaire
+                    </label>
+
+                    <textarea
+                        id="commentaire-client"
+                        name="commentaire"
+                        rows="4"
+                        placeholder="Informations supplémentaires (facultatif)"
+                    ></textarea>
+
+
+                    <!-- BOUTON -->
+
+                    <button type="submit">
+                        Confirmer la commande
+                    </button>
+
+
+                </form>
+
+            </div>
+
+
+
+            <!-- ======================================
+                 RÉCAPITULATIF
+                 ====================================== -->
+
+            <div class="recapitulatif-commande">
+
+
+                <h2>
+                    Votre commande
+                </h2>
+
+
+                <div
+                    class="contenu-commande"
+                ></div>
+
+
+                <div class="total-commande">
+
+                    <strong>
+                        Total :
+                    </strong>
+
+                    <span>
+                        0 F
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ==========================================
+         PIED DE PAGE
+         ========================================== -->
+
+    <footer>
+
+        <p>
+            © 2026 BJE - Boutique Jeune Entrepreneur
+        </p>
+
+        <p>
+            Style, qualité et confiance.
+        </p>
+
+    </footer>
+
+
+
+    <!-- ==========================================
+         JAVASCRIPT
+         ========================================== -->
+
+    <script src="java.js"></script>
+
+</body>
+
+</html>

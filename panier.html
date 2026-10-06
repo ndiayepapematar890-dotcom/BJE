@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ==========================================
+         BARRE DE NAVIGATION
+         ========================================== -->
+
+    <header>
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Accueil
+                    </a>
+                </li>
+
+                <li>
+                    <a href="catalogue.html">
+                        Catalogue
+                    </a>
+                </li>
+
+                <li>
+                    <a href="apropos.html">
+                        A propos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="panier.html">
+                        Panier
+                        (<span class="nombre-panier">0</span>)
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ==========================================
+         CONTENU PRINCIPAL
+         ========================================== -->
+
+    <main>
+
+        <section class="panier">
+
+
+            <h1>
+                Mon panier
+            </h1>
+
+
+            <!-- Les produits seront ajoutés
+                 automatiquement par JavaScript -->
+
+            <div class="contenu-panier"></div>
+
+
+            <!-- ======================================
+                 RÉSUMÉ DU PANIER
+                 ====================================== -->
+
+            <div class="resume-panier">
+
+                <h2>
+                    Total :
+                    <span class="total-panier">0 F</span>
+                </h2>
+
+                <button class="vider-panier">
+                    Vider le panier
+                </button>
+
+                <a
+                    href="commande.html"
+                    class="bouton-commande">
+                        Passer la commande
+                </a>
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ==========================================
+         JAVASCRIPT
+         ========================================== -->
+
+    <script src="java.js"></script>
+
+</body>
+</html>
